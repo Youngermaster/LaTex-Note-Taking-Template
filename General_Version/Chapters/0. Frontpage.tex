@@ -4,12 +4,12 @@
 
 \begin{tikzpicture}
 
-\node[opacity=0.3,inner sep=0pt,remember picture,overlay] at (4.5,-0.5){
-    \includegraphics[width=0.8\textwidth]{Figures/0. General/eafit_logo_gray.png}
-};
+% \node[opacity=0.3,inner sep=0pt,remember picture,overlay] at (4.5,-0.5){
+%     \includegraphics[width=0.8\textwidth]{Figures/0. General/eafit_logo_gray.png}
+% };
 
 \node[inner sep=0pt] (logo) at (0,0)
-    {\includegraphics[width=.25\textwidth]{Figures/0. General/eafit_logo_blue.png}};
+    {\includegraphics[width=.25\textwidth]{Figures/0. General/logo.png}};
     
 \node[text width = 0.5\textwidth, right = of logo](title){\sffamily\huge\reporttitle};
 
@@ -17,7 +17,7 @@
 
 \gettikzxy{(subtitle.south)}{\sffamily\subtitlex}{\subtitley}
 \gettikzxy{(title.north)}{\titlex}{\titley}
-\draw[line width=1mm, EAFIT-blue]($(logo.east)!0.5!(title.west)$) +(0,\subtitley) -- +(0,\titley);
+\draw[line width=1mm, Red-joyful]($(logo.east)!0.5!(title.west)$) +(0,\subtitley) -- +(0,\titley);
 
 \end{tikzpicture}
 \vspace{3cm}
@@ -40,20 +40,10 @@
 
 \sffamily \grouptutor
 
-\tikz[remember picture,overlay]\node[anchor=south,inner sep=0pt] at (current page.south) {\includegraphics[width=\paperwidth]{Figures/0. General/eafit_banner.png}};
+\tikz[remember picture,overlay]\node[anchor=south,inner sep=0pt] at (current page.south) {\includegraphics[width=\paperwidth]{Figures/0. General/banner.png}};
 
 \mbox{}
 \vfill
 \sffamily \Large \textcolor{white}{\placeanddate} \\
 
-
-
 \end{titlepage}
-
-
-
-
-
-
-
-

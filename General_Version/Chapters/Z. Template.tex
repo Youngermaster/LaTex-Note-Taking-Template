@@ -5,7 +5,7 @@
 This section contains some templates that can be used to create a uniform style within the document. It also shows of the overall formatting of the template, created using the predefined styles from the \texttt{settings.tex} file.
 
 \subsection{General formatting}
-Firstly, the document uses the font mlmodern, using no indent for new paragraphs and commonly uses the color \textcolor{EAFIT-blue}{EAFIT-blue} (the color of the TU/e logo) in its formatting. It uses the \texttt{fancyhdr} package for its headers and footers, using the TU/e logo and report title as the header and the page number as the footer. The template uses custom section, subsection and subsubsection formatting making use of the \texttt{titlesec} package.\\
+Firstly, the document uses the font mlmodern, using no indent for new paragraphs and commonly uses the color \textcolor{Red-joyful}{Red-joyful} in its formatting. It uses the \texttt{fancyhdr} package for its headers and footers, using a generic logo and report title as the header and the page number as the footer. The template uses custom section, subsection and subsubsection formatting making use of the \texttt{titlesec} package.\\
 The \texttt{hyperref} package is responsible for highlighting and formatting references like figures and tables. For example \cref{table: style 1} or \cref{fig: three images}. It also works for citations \cite{texbook}. Note how figure numbers are numbered according to the format \texttt{<chapter number>.<figure number>}.\\
 
 Bullet lists are also changed globally, for a maximum of 3 levels:
@@ -41,14 +41,14 @@ Similarly numbered lists are also changed document wide:
 \newpage
 
 \subsection{Tables and figures}
-The following table, \cref{table: style 1}, shows a possible format for tables in this document. Alternatively, one can also use the black and white version of this, shown in \cref{table: style 2}. Note that caption labels are in the format \textbf{\textcolor{EAFIT-blue}{Table x.y:} }
+The following table, \cref{table: style 1}, shows a possible format for tables in this document. Alternatively, one can also use the black and white version of this, shown in \cref{table: style 2}. Note that caption labels are in the format \textbf{\textcolor{Red-joyful}{Table x.y:} }
 \begin{table}[ht]
-\rowcolors{2}{EAFIT-blue!10}{white}
+\rowcolors{2}{Red-joyful!10}{white}
 \centering
 \caption{A table without vertical lines.}
 \begin{tabular}[t]{ccccc}
 \toprule
-\color{EAFIT-blue}\textbf{Column 1}&\color{EAFIT-blue}\textbf{Column 2}&\color{EAFIT-blue}\textbf{Column 3}&\color{EAFIT-blue}\textbf{Column 4}&\color{EAFIT-blue}\textbf{Column 5}\\
+\color{Red-joyful}\textbf{Column 1}&\color{Red-joyful}\textbf{Column 2}&\color{Red-joyful}\textbf{Column 3}&\color{Red-joyful}\textbf{Column 4}&\color{Red-joyful}\textbf{Column 5}\\
 \midrule
 Entry 1&1&2&3&4\\
 Entry 2&1&2&3&4\\
