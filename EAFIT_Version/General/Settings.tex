@@ -1,0 +1,89 @@
+% Give your report a title
+\newcommand\reporttitle{Insert title here, using two or three lines looks the nicest}
+
+% Insert course code, name, quartile number and year (or any other subtitle)
+\newcommand\reportsubtitle{
+course code, name - Qx (202x)
+}
+
+% Add your group number (for DBL) or any other text.
+\newcommand\groupnumber{
+\textbf{Group xx}
+}
+
+% Insert authors and student numbers here
+\newcommand\reportauthors{
+Name Surname & Student number \\
+Copy me & Copy me \\
+}
+
+% Add the name of your tutor (for DBL) or any other text.
+\newcommand\grouptutor{
+Tutor: Name Surname
+}
+
+% Date and location (default: current date and Medellín)
+\newcommand\placeanddate{
+Medellín, \today
+}
+
+% Define EAFIT-blue (color of the TU/e logo). Can be changed to drastically change the look of the template
+\definecolor{EAFIT-blue}{RGB}{2, 8, 115}
+
+% All of the following code can be removed to be left with (close to) default LaTeX behaviour. 
+
+% Sets up hyperlinks in the document to be colored
+\hypersetup{
+    colorlinks=true,
+    linkcolor=EAFIT-blue,
+    urlcolor=EAFIT-blue,
+    citecolor = EAFIT-blue
+    }
+\urlstyle{same} % Defines settings for link and reference formatting
+
+
+% Change bullet style for level 1, 2 and 3 respectively for itemize
+\renewcommand{\labelitemi}{\scriptsize\textcolor{EAFIT-blue}{$\blacksquare$}}% level 1
+\renewcommand{\labelitemii}{\scriptsize\textcolor{EAFIT-blue}{$\square$}}% level 2
+\renewcommand{\labelitemiii}{\textcolor{EAFIT-blue}{$\circ$}}% level 3
+
+% \renewcommand{\labelitemi}{\small\textcolor{EAFIT-blue}{\ding{70}}} % level 1
+% \renewcommand{\labelitemii}{\small\textcolor{EAFIT-blue}{\ding{71}}}% level 2
+% \renewcommand{\labelitemiii}{\tiny\textcolor{EAFIT-blue}{\ding{71}}}% level 3
+
+% Change bullet style for level 1, 2 and 3 respectively for enumerate
+\renewcommand{\labelenumi}{\textbf{\textcolor{EAFIT-blue}{\arabic*.}}}% level 1
+\renewcommand{\labelenumii}{\textbf{\textcolor{EAFIT-blue}{[\alph*]}}}% level 2
+\renewcommand{\labelenumiii}{\textbf{\textcolor{EAFIT-blue}{\roman*.}}}% level 3
+
+% Have reference labels be linked to section (section 3 will have fig. 3.1 etc.)
+\counterwithin{equation}{section} % For equations
+\counterwithin{figure}{section} % For figures
+\counterwithin{table}{section} % For tables
+
+% Creates a beautiful header/footer
+\pagestyle{fancy}
+\lhead{\includegraphics[height=14pt]{Figures/0. General/eafit_logo_blue.png}}
+\rhead{\reporttitle}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Page \thepage}
+
+% Formats section, subsection and subsubsection titles respectively 
+\titleformat{\section}{\sffamily\color{EAFIT-blue}\Large\bfseries}{\thesection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats section titles
+
+\titleformat{\subsection}{\sffamily\color{EAFIT-blue}\large\bfseries}{\thesubsection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats subsection titles
+
+\titleformat{\subsubsection}{\sffamily\color{EAFIT-blue}\bfseries}{\thesubsubsection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats subsubsection titles
+
+% Formats captions
+\DeclareCaptionFont{EAFIT-blue}{\color{EAFIT-blue}}
+\captionsetup{labelfont={EAFIT-blue,bf}}
+
+ % Changes font to mlmodern
+\usepackage{mlmodern}
+
+% Removes indent when starting a new paragraph
+\setlength\parindent{0pt}
+
+% Limits the ToC to sections and subsections (no subsubsec.)
+\setcounter{tocdepth}{2}
