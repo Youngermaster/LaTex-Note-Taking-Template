@@ -15,13 +15,17 @@ pdflatex main.tex
 
 ### General Version
 
-![General_Version_00](Assets/EAFIT_Version_00.png)
-![General_Version_01](Assets/EAFIT_Version_01.png)
+<p>
+    <img src="Assets/EAFIT_Version_00.png" alt="General_Version_00" width="250"/>
+    <img src="Assets/EAFIT_Version_01.png" alt="General_Version_01" width="250"/>
+</p>
 
 ### EAFIT Version
 
-![EAFIT_Version_00](Assets/EAFIT_Version_00.png)
-![EAFIT_Version_01](Assets/EAFIT_Version_01.png)
+<p>
+    <img src="Assets/EAFIT_Version_00.png" alt="General_Version_00" width="250"/>
+    <img src="Assets/EAFIT_Version_01.png" alt="General_Version_01" width="250"/>
+</p>
 
 ## Acknowledgement
 
